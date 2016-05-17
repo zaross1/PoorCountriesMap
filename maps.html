@@ -1,0 +1,51 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jason Mortensen's Map Program</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/maps.css">
+  <style type="text/css">
+
+  html, body { height: 100%; margin: 0; padding: 0; }
+
+  #map { height: 50%; width: 30%; margin-top: 4%; margin-left: 30%}
+</style>
+</head>
+<body>
+
+
+<h1>Some of the Poorest Countries in the World</h1>
+
+<div id="poor"> <!-- the list of countries is displayed here -->
+</div>
+<div id="map"> <!-- this is where the google map iframe is loaded -->
+
+</div>
+
+
+
+<div id="results"> <!-- this is where the country data tables appear -->
+  </div>
+
+
+
+
+
+
+
+
+<script src="javascript/jquery.min.js"></script>
+<script src="javascript/mustache.js"></script>
+<script src="javascript/maps.js"></script> <!-- controls logic for html page -->
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=SECRET&callback=theMap.initMap">
+    </script> <!-- loads the google map -->
+
+
+</body>
+</html>
